@@ -43,19 +43,22 @@ class Particle {
   }
 
 class ParticleLarge extends Particle {
-    constructor(x, y, brightness) {
+    constructor(x, y, width, height) {
         super(x, y);
-        this.bright = brightness;
+        this.width = width;
+        this.height = height;
     }
 
     update() {
         super.update();
+        this.width += random(-2, 2)
+        this.height += random(-2, 2)
     }
 
     show() {
-        stroke(100);
-        strokeWeight(25);
-        point(this.x, this.y);
+       strokeWeight(1);
+       stroke(100);
+       rect(this.x, this.y, this.width, this.height);
       }  
 }
 
@@ -66,7 +69,7 @@ function setup() {
   createCanvas(500, 500);
   p1 = new Particle(300, 300);
   p2 = new Box(300, 300);
-  p3 = new ParticleLarge(300, 300, 100)
+  p3 = new ParticleLarge(300, 300, 10, 15)
 }
 
 function draw() {
