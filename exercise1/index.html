@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(68, 20, 20);
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+    color: rgb(59, 57, 57);
+}
+
+p {
+    color: rgb(77, 74, 74);
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+    
+    <header>
+      <h2>Chinese Architecture</h2>
+    </header>
+    
+    <section>
+      <nav>
+        <ul>
+          <li><a href="https://en.dpm.org.cn">The Palace Museum</a></li>
+          <br><li><a href="https://en.wikipedia.org/wiki/Humble_Administrator%27s_Garden">The Humble Administrator's Garden</a></li>
+          <br><li><a href="https://en.wikipedia.org/wiki/Yueyang_Tower">Yueyang Tower</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>The Palace Museum</h1>
+        <p>Established in 1925, the Palace Museum is located in the imperial palace of the consecutive Ming (1368-1644) and Qing (1644-1911) dynasties. </p>
+        <p>The magnificent architectural complex, also known as the Forbidden City, and the vast holdings of paintings, calligraphy, ceramics, and antiquities of the imperial collections make it one of the most prestigious museums in China and the world. In 1961, the State Council designated the former imperial residence as one of China's foremost-protected cultural heritage sites, and in 1987 it was listed as a UNESCO World Heritage site. </p>
+      </article>
+
+      <article>
+        <h1>The Humble Administrator's Garden</h1>
+        <p>On the garden's site was first built a garden during the Shaoxing period (1131-1162) of the Southern Song Dynasty. Afterwards it changed ownership, and was destroyed or modified continually. It was the residence and garden of Lu Guimeng, a Tang Dynasty scholar. Later in the Yuan Dynasty it became the Dahong Temple's garden.</p>
+        <p>The garden contains numerous pavilions and bridges set among a maze of connected pools and islands. It consists of three major parts set about a large lake: the central part (Zhuozheng Yuan), the eastern part (once called Guitianyuanju, Dwelling Upon Return to the Countryside), and a western part (the Supplementary Garden). </p>
+      </article>
+
+      <article>
+        <h1>Yueyang Tower</h1>
+        <p>Yueyang Tower (pinyin: Yuèyáng Lóu) is an ancient Chinese tower in Yueyang, Hunan Province, on the shore of Lake Dongting. Alongside the Pavilion of Prince Teng and Yellow Crane Tower, it is one of the Three Great Towers of Jiangnan. </p>
+        <p>Yueyang Tower became famous for Memorial to Yueyang Tower written by Fan Zhongyan, an eminent minister of the Northern Song dynasty (960–1127) in China. </p>
+      </article>
+
+    </section>
+    
+    <footer>
+      <li><a href="https://github.com/SoniaSun810/245_GUI_Programming">Fengnan Sun</a></li>
+    </footer>
+    
+    </body>
+    </html>
+    
