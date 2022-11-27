@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0px;
+    background-color: #f1f1f1;
+  }
+  
+  .wrapper {
+    overflow: hidden;
+  }
+  
+  .left {
+    width: 45%;
+    height: 350px;
+    background: green;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .right {
+    width: 45%;
+    height: 650px;
+    background: yellow;
+    color: black;
+    text-align: right;
+  }
+  
+  .center {
+    margin: 5%;
+    height: 250px;
+    background-color: red;
+    color: white;
+  }
+  
+  .inner {
+    width: 450px;
+    height: 150px;
+  }
+  
+  .left .inner {
+    border: 2px solid yellow;
+    color: yellow;
+  }
+  
+  .right .inner {
+    border: 2px solid green;
+    color: green;
+  }
+  
+  .center .inner {
+    border: 2px solid blue;
+  }
+  
+  /* add/modify your css properties below this line */
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper .left {
+    display: flex;
+    justify-content: right;
+  }
+
+  .wrapper .left .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .wrapper .right .inner {
+    color: purple;
+    text-align: left;
+  }
+  
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
