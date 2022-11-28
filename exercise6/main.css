@@ -1,0 +1,46 @@
+.carousel {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  overflow: hidden;
+}
+
+.slide__container {
+  display: inline-flex;
+  white-space: nowrap;
+  position: relative;
+  height: 300px;
+}
+
+img {
+  object-fit: cover;
+  width: 600px;
+  height: 350px;
+}
+
+.slides_navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5em;
+}
+
+.slides_navigation button {
+  background-color: rgb(4, 99, 80);
+  color: white;
+  height: 1.5em;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 1em;
+}
+
+#title {
+  color: rgb(4, 99, 80);
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 3em;
+}
