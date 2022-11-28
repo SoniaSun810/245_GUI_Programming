@@ -1,3 +1,5 @@
+  /* https://yoksel.github.io/flex-cheatsheet */
+
 * {
     box-sizing: border-box;
   }
@@ -70,7 +72,7 @@
   .wrapper .left .inner {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-self: flex-end;
     text-align: right;
   }

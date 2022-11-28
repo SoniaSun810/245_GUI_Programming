@@ -1,20 +1,83 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="mystyle.css" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Front-end JS Workbench</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
-<script src="particle.js" defer></script>
-<script src="script.js" defer></script>
-<div id="content">Hello World</div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <link rel="stylesheet" href="main.css">
+    <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
 </head>
 
 <body>
-    <button onclick="updateContent()">Click me</button>
-    <element onclick="myScript"></element>
+    <div class="wrapper">
+        <header>
+            <h1 class="hero-title">
+                Fengnan Sun
+                <span>Software Engineer Intern</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="" class="current">home</a></li>
+                    <li><a href="">education</a></li>
+                    <li><a href="">experience</a></li>
+                    <li><a href="">projects</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <article>
+                <figure>
+                    <img src="images/webAppImage.png" alt="DBMS" />
+                    <figcaption>Digital Menu Web App</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>About Me</h2>
+                    <h3>Throughout the course of my career and master program, I have been improving my software development and programming skills. I am a capable and consistent contributor skilled at problem solving, prioritizing and completing work tasks with proficiency, who has been looking for rapid growth, constant learning and dynamic challenges as well. </h3>
+                </hgroup>
+            </article>
+            <article>
+                <figure>
+                    <img src="images/iOSAppImage.png" alt="Security System in Mining" />
+                    <figcaption>Quiz Game App</figcaption>
+                </figure>
+                <hgroup>
+                    <h2>Projects</h2>
+                    <h3>Quiz Game App <br>Feature development: Answer questions, Multiple choice or Completion. Keep score in record. Edit & add questions, add
+                        images via camera, photo library or drawing a picture. </h3>
+                </hgroup>
+                <p>iOS Mobile App Development</p>
+            </article>
+        </section>
+        <aside>
+            <section class="work-experience">
+                <h2>Education</h2>
+                <a href="https://uci.edu/">University of California, Irvine
+                    <p>Master Program of Software Engineering</p>
+                </a>
+                <a href="https://www.manchester.ac.uk/">The University of Manchester
+                    <p>Master Program of Renewable Energy</p>
+                </a>
+            </section>
+            <section class="contact-details">
+                <h2>Contact</h2>
+                <p id="address">Fengnan Sun<br/>
+                    74000S Verano Road<br/>
+                    APT# C609<br/>
+                    Irvine<br/>
+                    California</p>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2022 Fengnan Sun
+        </footer>
+    </div><!-- .wrapper -->
 </body>
+
 </html>
 
