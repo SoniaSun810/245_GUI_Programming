@@ -4,7 +4,7 @@ function Sidebar() {
     return (
         <>
         <aside>
-            <section class="work-experience">
+            <section className="work-experience">
                 <h2>Education</h2>
                 <a href="https://uci.edu/">University of California, Irvine
                     <p>Master Program of Software Engineering</p>
@@ -13,7 +13,7 @@ function Sidebar() {
                     <p>Master Program of Renewable Energy</p>
                 </a>
             </section>
-            <section class="contact-details">
+            <section className="contact-details">
                 <h2>Contact</h2>
                 <p id="address">Fengnan Sun<br/>
                     74000S Verano Road<br/>

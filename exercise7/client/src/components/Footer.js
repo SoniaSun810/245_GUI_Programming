@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
     return (
         <>
-            <div class="footer">
+            <div className="footer">
                 <p>&copy; 2022 Fengnan Sun</p>
             </div>
         </>
