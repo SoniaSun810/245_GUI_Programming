@@ -33,16 +33,13 @@ section.details {
   }
   
   article figure img {
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 18em;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 30em;
+    align-self: center;
   }
   
   article figure figcaption {
     font-size: 80%;
-    text-align: left;
+    text-align:center;
     color: rgb(123, 120, 120);
     bottom: 0%;
   }

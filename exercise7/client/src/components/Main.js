@@ -5,7 +5,7 @@ function Main() {
         <section className="details">
             <article>
                 <figure>
-                    <img src="../public/webAppImage.png" alt="Web App" />
+                    <img src={require("./webAppImage.png")} alt="Web App" />
                     <figcaption>Digital Menu Web App</figcaption>
                 </figure>
                 <hgroup>
@@ -15,7 +15,7 @@ function Main() {
             </article>
             <article>
                 <figure>
-                    <img src="../public/iOSAppImage.png" alt="iOS APP" />
+                    <img src={require("./iOSAppImage.png")} alt="iOS APP" />
                     <figcaption>Quiz Game App</figcaption>
                 </figure>
                 <hgroup>

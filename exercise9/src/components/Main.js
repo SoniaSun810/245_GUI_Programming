@@ -5,11 +5,11 @@ function Main(props, children) {
         <section className="details">
             <article>
                 <figure>
-                    <img src="../public/webAppImage.png" alt="Web App" />
+                    <img className="Image" src={props.image} alt="web image" />
                     <figcaption>Digital Menu Web App</figcaption>
                 </figure>
                 <hgroup>
-                    <h2>About My Major</h2>
+                    <h2 className="title">{props.title}</h2>
                     <h3 className="main">{props.content}</h3>
                 </hgroup>
             </article>

@@ -24,6 +24,7 @@ function rightMove() {
     slideContainer.style.transform = "translateX(" + -imgSize * counter + "px)"; // the slideContainer's CSS transform shall be updated upon click
 }
 
+// ? How does method transitionStatus work here?
 function transitionStatus() {
     // if the current image we are at is the first clone we need to update the counter and
     // jump to the last slide without a transition
