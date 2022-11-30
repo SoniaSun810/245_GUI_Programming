@@ -1,0 +1,17 @@
+aside {
+    width: 230px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+  }
+  
+  aside section a {
+    text-decoration:dotted ;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  aside section a:hover {
+    color: #985d6a;
+    background-color: #efefef;
+  }
