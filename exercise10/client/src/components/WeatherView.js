@@ -7,17 +7,17 @@ import { act } from "react-dom/test-utils";
 const WeatherMap = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [emptyData, setEmptyData] = useState(false);
   const [data, setData] = useState(false);
 
   // set Latitude and Longitude of Irvine
-  const [lat, setLat] = useState("33.6425");
-  const [lon, setLon] = useState("-117.8417");
+  const [lat, setLat] = useState("0");
+  const [lon, setLon] = useState("0");
   const [zip, setZip] = useState("92617");
   const [country, setCountry] = useState("US");
 
   // set API key of Open Weather Map
   const APIkey = "7d7fc5519b96e0b642cee566bb0d7752";
+
 
   useEffect(() => {
     setLoading(true);
@@ -27,7 +27,7 @@ const WeatherMap = () => {
     )
       .then((response) => {
         if (!response.ok) {
-          throw new Error("No valid response");
+          throw new Error("Network response was not OK");
         }
         return response.json();
       })
@@ -52,12 +52,13 @@ const WeatherMap = () => {
     )
       .then((response) => {
         if (!response.ok) {
-          throw new Error("No valid response");
+          throw new Error("Network response was not OK");
         }
         return response.json();
       })
       .then((actualData) => {
         console.log(actualData);
+
         setLat(actualData.lat);
         setLon(actualData.lon);
       })
@@ -68,30 +69,17 @@ const WeatherMap = () => {
       });
   }, [zip, country]);
 
- function setLocation() {
-    
-
-  }
 
   return (
     <>
       <div className="weatherDetails">
-        <input className="zipNum"
-          defaultValue={zip}
-          onChange={(e) => setZip(e.currentTarget.value)}
-        ></input>
-        <br />
-        <input className="countryName"
-          defaultValue={country}
-          onChange={(e) => setCountry(e.currentTarget.value)}
-        ></input>
-        {/* <button title="Submit" onClick={()=> setLocation() } /> */}
-        {loading == true ? (
+        {loading === true ? (
           "still loading"
         ) : error ? (
           "Error occured"
         ) : (
          <div className="weatherOutput" >
+           <p>Weather in Irvine</p>
             <br />Latitude: {lat} 
             <br /> Longitude: {lon}
             <br />

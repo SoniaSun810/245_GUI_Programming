@@ -6,7 +6,7 @@ function Main(props, children) {
             <article>
                 <figure>
                     <img className="Image" src={props.image} alt="web image" />
-                    <figcaption>Digital Menu Web App</figcaption>
+                    <figcaption>Figure</figcaption>
                 </figure>
                 <hgroup>
                     <h2 className="title">{props.title}</h2>
